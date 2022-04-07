@@ -1,0 +1,28 @@
+@import "reset.scss";
+@import "./blocks/header.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/impression.scss";
+@import "./blocks/sights.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/button.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/promo.scss";
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.sub-title {
+   font-size: 14px;
+   line-height: 1.5;
+  text-transform: uppercase;
+}

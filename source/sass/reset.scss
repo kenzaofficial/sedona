@@ -22,13 +22,13 @@ html,
 body {
 	height: 100%;
 	line-height: 1;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	color: #000;
 }
 
 body {
-	@media (max-width: 767.px){
+	@media (max-width: 767px){
 		 &.lock {
 			overflow: hidden;
 		 } 
