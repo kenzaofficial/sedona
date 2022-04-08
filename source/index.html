@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/null.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
@@ -19,7 +23,7 @@
           <ul class="nav__list">
             <li class="nav__item nav__item--current"><a href="index.html" class="nav__link">главная</a></li>
             <li class="nav__item"><a href="catalog.html" class="nav__link">фото и видео</a></li>
-            <li class="nav__item"><a href="form.html" class="nav__link"></a>форма отзыва</li>
+            <li class="nav__item"><a href="form.html" class="nav__link">форма отзыва</a></li>
             <li class="nav__item"><a href="https://htmlacademy.ru/" class="nav__link">html academy</a></li>
           </ul>
         </nav>
@@ -36,54 +40,60 @@
         <article class="advantages__preview">
           <div class="advantages__item item-advantage item-advantage--current">
             <h4 class="item-advantage__title title">настоящий городок</h4>
-            <p class="item-advantage__number">- №1 -</p>
-            <p class="item-advantage__sub-title">седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="item-advantage__number">— №1 —</p>
+            <p class="item-advantage__sub-title sub-title">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img src="img/advantages/advantages-image_1.jpg" alt="sedona city foto" class="advantages__preview-image">
         </article>
         <ul class="advantages__top-list">
           <li class="advantages__features features-advantage">
-            <img src="img/advantages/advantages_icon_1.svg" alt="icon-house" class="features-advantage" width="40"
+            <img src="img/advantages/advantages_icon_1.svg" alt="icon-house" class="features-advantage__img" width="40"
               height="40">
-            <h4 class="features-advantage__title">жилье</h4>
-            <p class="features-advantage__sub-title">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <div class="features-advantage__text">
+              <h4 class="features-advantage__title title">жилье</h4>
+              <p class="features-advantage__sub-title sub-title">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
           </li>
           <li class="advantages__features features-advantage">
-            <img src="img/advantages/advantages_icon_2.svg" alt="icon-burger" class="features-advantage" width="40"
+            <img src="img/advantages/advantages_icon_2.svg" alt="icon-burger" class="features-advantage__img" width="40"
               height="40">
-            <h4 class="features-advantage__title">еда</h4>
-            <p class="features-advantage__sub-title">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <div class="features-advantage__text">
+            <h4 class="features-advantage__title title">еда</h4>
+            <p class="features-advantage__sub-title sub-title">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
           </li>
           <li class="advantages__features features-advantage">
-            <img src="img/advantages/advantages_icon_3.svg" alt="icon-gift" class="features-advantage" width="40"
+            <img src="img/advantages/advantages_icon_3.svg" alt="icon-gift" class="features-advantage__img" width="40"
               height="40">
-            <h4 class="features-advantage__title">сувениры</h4>
-            <p class="features-advantage__sub-title">не только китайского, но и местоного производства!</p>
+              <div class="features-advantage__text">
+            <h4 class="features-advantage__title title">сувениры</h4>
+            <p class="features-advantage__sub-title sub-title">не только китайского, но и местоного производства!</p>
+            </div>
           </li>
         </ul>
         <article class="advantages__preview advantages__preview--reverse">
           <div class="advantages__item item-advantage item-advantage--current">
             <h4 class="item-advantage__title title">там есть мост дъявола</h4>
-            <p class="item-advantage__number">- №2 -</p>
-            <p class="item-advantage__sub-title">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            <p class="item-advantage__number">— №2 —</p>
+            <p class="item-advantage__sub-title sub-title">да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
           <img src="img/advantages/advantages-image_2.jpg" alt="devil bridge foto" class="advantages__preview-image">
         </article>
         <ul class="advantages__bottom-list">
           <li class="advantages__item item-advantage">
             <h4 class="item-advantage__title title">небольшая площадь</h4>
-            <p class="item-advantage__number">- №3 -</p>
-            <p class="item-advantage__sub-title">все интересные места находятся очень близко</p>
+            <p class="item-advantage__number">— №3 —</p>
+            <p class="item-advantage__sub-title sub-title">все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item item-advantage">
             <h4 class="item-advantage__title title">красивая дорогая</h4>
-            <p class="item-advantage__number">- №4 -</p>
-            <p class="item-advantage__sub-title">ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="item-advantage__number">— №4 —</p>
+            <p class="item-advantage__sub-title sub-title">ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item item-advantage">
             <h4 class="item-advantage__title title">мало туристов</h4>
-            <p class="item-advantage__number">- №5 -</p>
-            <p class="item-advantage__sub-title">большинство едет в гранд каньон и толпится там</p>
+            <p class="item-advantage__number">— №5 —</p>
+            <p class="item-advantage__sub-title sub-title">большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
