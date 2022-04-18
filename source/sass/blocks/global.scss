@@ -1,0 +1,21 @@
+.wrapper__container {
+  max-width: 1280px;
+  padding: 0;
+  @media (min-width: 1199px) {
+    padding: 0 40px;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}

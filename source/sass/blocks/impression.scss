@@ -1,0 +1,28 @@
+.form__impression {
+}
+
+.impression {
+  padding: 36px 0 25px;
+  @media (min-width:767px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.impression__title {
+}
+
+.impression__item {
+  margin-bottom: 25px;
+}
+
+.impression__radio {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.impression__input {
+}

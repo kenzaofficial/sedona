@@ -1,0 +1,28 @@
+.form__sights {
+}
+
+.sights {
+  padding: 35px 0 24px;
+  @media (min-width: 767px) {
+    width: 100%;
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+  }
+}
+
+.sights__title {
+}
+
+.sights__item {
+  margin-bottom: 15px;
+}
+
+.sights__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sights__input {
+}

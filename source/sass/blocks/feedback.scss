@@ -1,0 +1,17 @@
+.form__feedback {
+}
+.feedback {
+  padding: 24px 0 55px;
+  @media (min-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+.feedback__title {
+}
+
+.feedback__area {
+   width: 100%;
+  background-color: goldenrod;
+  padding: 5px;
+}

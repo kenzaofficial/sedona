@@ -1,0 +1,36 @@
+.form__introducer {
+}
+
+.introducer {
+   padding-bottom: 40px;
+   @media (min-width:767px) {
+      padding-right: 45px;
+      width: 50%;
+   }
+}
+
+.introducer__title {
+  margin-bottom: 20px;
+}
+
+.introducer__item {
+  margin-bottom: 15px;
+  @media (min-width:767px) {
+      max-width: 280px;
+   }
+}
+
+.introducer__label {
+  text-transform: uppercase;
+}
+
+.introducer__input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: saddlebrown;
+}
