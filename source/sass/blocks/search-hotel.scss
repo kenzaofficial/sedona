@@ -1,25 +1,34 @@
 .search-hotel {
   background-color: #fff;
-  padding: 45px 16px 50px;
+  padding: 68px 16px 50px;
   text-align: center;
-  max-width: 70%;
   margin: 0 auto;
+  @media (min-width:767px) {
+    padding-bottom: 60px;
+  }
+  @media (min-width:767px) {
+    padding-bottom: 65px;
+  }
 }
 .search-hotel__title {
   font-size: 21px;
   margin-bottom: 20px;
   @media (min-width: 767px) {
-    font-family: PT Sans;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 }
 
 .search-hotel__sub-title {
+  margin: 0 auto;
+  max-width: 400px;
   margin-bottom: 20px;
+  @media (min-width:767px) {
+    margin-bottom: 45px;
+  }
 }
 
 .serach-hotel__button {
-  
 }
 
 .map iframe {

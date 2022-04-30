@@ -1,24 +1,27 @@
 .intro {
-   position: relative;
-   padding: 90px 0;
-   text-align: center;
-   background: #81B3D2 url(../../img/intro/intro-bg.jpg) center / cover no-repeat;
+  position: relative;
+  padding: 90px 0;
+  text-align: center;
+  background: #81b3d2 url(../../img/intro/intro-bg.jpg) center / cover no-repeat;
+  @media (min-width: 767px) {
+     padding: 130px 0 90px;
+  }
 }
 
-.intro__container {
-   
+.intro__image {
+  @media (min-width: 767px) {
+    width: 450px;
+    height: 350px;
+  }
 }
-
 .intro::after {
-   position: absolute;
-   content: "";
-   width: 768px;
-   height: 57px;
-   bottom: 0;
-   left: 50%;
-   transform: translate(-50%);
-   background: url(../../img/intro/intro-triangle.svg) center / cover no-repeat;
-   z-index: 5;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 57px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: url(../../img/intro/intro-triangle.svg) center / cover no-repeat;
+  z-index: 5;
 }
-
-

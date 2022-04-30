@@ -28,7 +28,11 @@ a {
 }
 .header__container {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 5px;
+  @media (min-width:767px) {
+     max-width: 1280px;
+     padding: 0 40px;
+  }
 }
 .header__body {
   position: relative;
@@ -193,6 +197,7 @@ a {
 
 .header__link--current {
   color: #766357;
+  color: red;
 }
 
 // .intro {

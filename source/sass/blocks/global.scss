@@ -9,9 +9,12 @@
 .title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width:767px) {
+    font-size: 21px;
+  }
 }
 
 .sub-title {

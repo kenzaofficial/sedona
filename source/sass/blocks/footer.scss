@@ -1,6 +1,9 @@
 .footer {
   padding: 35px 0;
   background-color: #fff;
+  @media (min-width:1199px) {
+    padding: 40px 0;
+  }
 }
 .footer__container {
   display: flex;
@@ -12,6 +15,9 @@
     max-width: 980px;
     padding: 0 60px;
   }
+  @media (min-width:767px) {
+    padding: 0 10px;
+}
 }
 .footer__title {
   font-size: 21px;
@@ -35,11 +41,15 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
+  transition: 0.4s;
 }
 .social__link {
   width: 48px;
   height: 48px;
   background: #81b3d2;
+  :hover {
+    transform: translateY(-10px);
+  }
 }
 
 
