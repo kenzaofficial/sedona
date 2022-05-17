@@ -1,12 +1,13 @@
 .search-hotel {
   background-color: #fff;
-  padding: 68px 16px 50px;
+  padding: 45px 16px;
   text-align: center;
   margin: 0 auto;
   @media (min-width:767px) {
+    padding-top: 63px;
     padding-bottom: 60px;
   }
-  @media (min-width:767px) {
+  @media (min-width:1199px) {
     padding-bottom: 65px;
   }
 }
@@ -22,7 +23,7 @@
 .search-hotel__sub-title {
   margin: 0 auto;
   max-width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   @media (min-width:767px) {
     margin-bottom: 45px;
   }

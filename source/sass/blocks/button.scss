@@ -8,8 +8,15 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-
-  background-color: #81b3d2;
+   background-color: #81b3d2;
+  transition: .3s;
+  &:hover {
+    background-color: #669EC0;
+  }
+  &:active {
+    color: rgba($color: #fff, $alpha: 0.3);
+    background-color: #5496BD;
+  }
   @media (min-width: 767px) {
     max-width: 458px;
     width: 100%;

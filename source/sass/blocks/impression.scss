@@ -1,28 +1,104 @@
-.form__impression {
+.impression {
+  position: relative;
+  padding: 25px 0 25px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 1px;
+    background-color: #E5E5E5;
+    top: 0;
+    left: -10%;
+    @media (min-width: 767px) {
+      width: 0;
+    }
+  }
+  @media (min-width: 767px) {
+    padding-top: 65px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  @media (min-width: 1199px) {
+    padding: 70px 0 55px;
+  }
 }
 
-.impression {
-  padding: 36px 0 25px;
-  @media (min-width:767px) {
+.impression__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 18px;
+  @media (min-width: 767px) {
+    flex-direction: row;
+    padding: 0 36px;
     width: 100%;
-    display: flex;
+    column-gap: 50px;
+    border-top: 1px solid #DBDBDB;
+  }
+  @media (min-width: 1199px) {
     justify-content: center;
-    flex-wrap: wrap;
+    column-gap: 65px;
   }
 }
 
 .impression__title {
+  margin-bottom: 18px;
+  @media (min-width: 767px) {
+    padding: 0 60px;
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1199px) {
+    margin-bottom: 45px;
+  }
 }
 
 .impression__item {
-  margin-bottom: 25px;
 }
 
-.impression__radio {
+.impression__label {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+    transition: .5s;
+    
+  }
+  &:hover::before {
+    background-color: #E5E5E5;
+  }
+  &:active::before,
+  &:active::after{
+    opacity: 0.3;
+  }
+}
+.impression__label::after {
+  position: absolute;
+  content: "";
+  background-color: #333;
+  width: 16px;
+  height: 16px;
+  top: 60%;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  left: 15px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.impression__input:checked + .impression__label::after {
+  opacity: 1;
 }
 
 .impression__input {
+  display: none;
 }

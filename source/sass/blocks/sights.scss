@@ -1,28 +1,108 @@
-.form__sights {
-}
-
 .sights {
-  padding: 35px 0 24px;
+  position: relative;
+  padding: 25px 0 40px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 0;
+    left: -10%;
+    @media (min-width: 767px) {
+      width: 0;
+    }
+  }
   @media (min-width: 767px) {
+    padding: 20px 0 30px;
     width: 100%;
-    display: flex;
-    gap: 65px;
-    justify-content: center;
+  }
+  @media (min-width: 1199px) {
+    padding: 20px 45px 75px;
   }
 }
 
+.sights__form {
+  display: grid;
+  row-gap: 36px;
+ @media (min-width: 767px) {
+  display: grid;
+  grid-template-columns: 225px 225px;
+  justify-content: center;
+  border-top: 1px solid #DBDBDB;
+  gap: 35px;
+ }
+ @media (min-width: 1199px) {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .sights__title {
+  margin-bottom: 27px;
+  @media (min-width: 767px) {
+    margin-bottom: 40px;
+   padding: 0 40px;
+   max-width: 400px;
+  }
+   @media (min-width: 1199px) {
+     margin-bottom: 70px;
+   }
 }
 
 .sights__item {
-  margin-bottom: 15px;
 }
 
 .sights__label {
+  position: relative;
+  padding-left: 60px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  cursor: pointer;
+}
+
+.sights__checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 4px;
+}
+
+.sights__checkbox::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #333;
+  transform: rotate(45deg);
+  top: 55%;
+  left: 27%;
+  opacity: 0;
+  transition: 0.3s;
+  
+}
+
+.sights__checkbox::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  transform: rotate(-45deg);
+  top: 46%;
+  left: 40%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sights__input:checked + .sights__checkbox::before,
+.sights__input:checked + .sights__checkbox::after {
+  opacity: 1;
 }
 
 .sights__input {
+  display: none;
 }
