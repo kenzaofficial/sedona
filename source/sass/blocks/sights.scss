@@ -1,6 +1,7 @@
 .sights {
   position: relative;
   padding: 25px 0 40px;
+
   &::before {
     position: absolute;
     content: "";
@@ -9,14 +10,17 @@
     background-color: #e5e5e5;
     top: 0;
     left: -10%;
+
     @media (min-width: 767px) {
       width: 0;
     }
   }
+
   @media (min-width: 767px) {
     padding: 20px 0 30px;
     width: 100%;
   }
+
   @media (min-width: 1199px) {
     padding: 20px 45px 75px;
   }
@@ -25,30 +29,32 @@
 .sights__form {
   display: grid;
   row-gap: 36px;
- @media (min-width: 767px) {
-  display: grid;
-  grid-template-columns: 225px 225px;
-  justify-content: center;
-  border-top: 1px solid #DBDBDB;
-  gap: 35px;
- }
- @media (min-width: 1199px) {
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-.sights__title {
-  margin-bottom: 27px;
+
   @media (min-width: 767px) {
-    margin-bottom: 40px;
-   padding: 0 40px;
-   max-width: 400px;
+    display: grid;
+    grid-template-columns: 225px 225px;
+    justify-content: center;
+    border-top: 1px solid #dbdbdb;
+    gap: 35px;
   }
-   @media (min-width: 1199px) {
-     margin-bottom: 70px;
-   }
+
+  @media (min-width: 1199px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
-.sights__item {
+.sights__title {
+  margin-bottom: 27px;
+
+  @media (min-width: 767px) {
+    margin-bottom: 40px;
+    padding: 0 40px;
+    max-width: 400px;
+  }
+
+  @media (min-width: 1199px) {
+    margin-bottom: 70px;
+  }
 }
 
 .sights__label {
@@ -76,13 +82,12 @@
   content: "";
   width: 12px;
   height: 3px;
-  background-color: #333;
+  background-color: #333333;
   transform: rotate(45deg);
   top: 55%;
   left: 27%;
   opacity: 0;
   transition: 0.3s;
-  
 }
 
 .sights__checkbox::after {
@@ -90,7 +95,7 @@
   content: "";
   width: 20px;
   height: 3px;
-  background-color: #333;
+  background-color: #333333;
   transform: rotate(-45deg);
   top: 46%;
   left: 40%;
