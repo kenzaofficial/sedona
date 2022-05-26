@@ -68,7 +68,7 @@
 
   @media (min-width: 1199px) {
     &:not(:first-child) {
-      max-width: 400px;
+      width: 33.333%;
     }
   }
 }
@@ -118,9 +118,7 @@
   font-weight: 700;
   margin-bottom: 5px;
 
-  @media (min-width: 767px) {
-    grid-area: 1 / 1 / 2 / 2;
-  }
+
 }
 
 .item-catalog__sub-title {
