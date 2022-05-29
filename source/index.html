@@ -8,8 +8,10 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-favicon.svg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body>
@@ -61,10 +63,11 @@
             </div>
             <div class="advantages__preview-wrapper">
               <picture>
-                <source srcset="img/advantages/advantages-image_1_desktop.jpg" media="(min-width:1199px)">
-                <source srcset="img/advantages/advantages-image_1_tablet.jpg" media="(min-width:767px)">
+                <source media="(min-width:1199px)" type="image/jpg"
+                  srcset="img/advantages/advantages-image_1_desktop.jpg 1x, img/advantages/advantages-image_1_desktop2x.jpg 2x">
+                <source media="(min-width:767px)" srcset="img/advantages/advantages-image_1_tablet.jpg 1x, img/advantages/advantages-image_1_tablet2x.jpg 2x">
                 <img src="img/advantages/advantages-image_1_mobile.jpg" alt="sedona city foto"
-                  class="advantages__preview-image">
+                  srcset="img/advantages/advantages-image_1_mobile2x.jpg" class="advantages__preview-image">
               </picture>
             </div>
           </article>
@@ -103,10 +106,12 @@
             </div>
             <div class="advantages__preview-wrapper">
               <picture>
-                <source srcset="img/advantages/advantages-image_2_desktop.jpg" media="(min-width:1199px)">
-                <source srcset="img/advantages/advantages-image_2_tablet.jpg" media="(min-width:767px)">
-                <img src="img/advantages/advantages-image_2_mobile.jpg" alt="devil bridge foto"
-                  class="advantages__preview-image">
+                <source media="(min-width:1199px)" type="image/jpg"
+                  srcset="img/advantages/advantages-image_2_desktop.jpg 1x, img/advantages/advantages-image_2_desktop2x.jpg 2x">
+                <source media="(min-width:767px)"
+                  srcset="img/advantages/advantages-image_2_tablet.jpg 1x, img/advantages/advantages-image_2_tablet2x.jpg 2x">
+                <img src="img/advantages/advantages-image_2_mobile.jpg" alt="sedona city foto"
+                  srcset="img/advantages/advantages-image_2_mobile2x.jpg" class="advantages__preview-image">
               </picture>
             </div>
           </article>
