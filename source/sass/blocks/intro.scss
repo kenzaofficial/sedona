@@ -6,12 +6,22 @@
   text-align: center;
   background: #81b3d2 url("../../img/intro/intro-bg.jpg") center / cover no-repeat;
 
+  @media (min-resolution:2dppx) {
+    background: #81b3d2 url("../../img/intro/intro-bg@2x.jpg") center / cover no-repeat;
+  }
+
   @media (min-width: 767px) {
     padding: 135px 0 100px;
+    background: #81b3d2 url("../../img/intro/intro-desktop.jpg") center / cover no-repeat;
+
+    @media (min-resolution:2dppx) {
+      background: #81b3d2 url("../../img/intro/intro-desktop@2x.jpg") center / cover no-repeat;
+    }
   }
 
   @media (min-width: 1199px) {
     padding: 140px 0 85px;
+
   }
 }
 
