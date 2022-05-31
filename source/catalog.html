@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicons/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 <body>
   <div class="wrapper">
     <div class="wrapper__container">
@@ -51,7 +52,7 @@
         </section>
         <section class="catalog">
           <div class="catalog__container">
-            <h3 class="catalog__title title">фото и видео</h3>
+            <h2 class="catalog__title title">фото и видео</h2>
             <p class="catalog__sub-title sub-title">
               не можете решиться на путешествие из-за курса?
               фотографии помогут вам забыть о политике и экономике.
@@ -59,13 +60,13 @@
             <ul class="catalog__list">
               <li class="catalog__item item-catalog">
                 <picture>
-                  <source srcset="img/catalog/desktop/photo-desktop_1.jpg" media="(min-width:1199px)">
-                  <source srcset="img/catalog/tablet/photo-tablet_1.jpg" media="(min-width:767px)">
-                  <img src="img/catalog/mobile/photo-mobile_1.jpg" alt="photo1" class="item-catalog__image">
+                  <source srcset="img/catalog/desktop/photo-desktop_1.jpg 1x, img/catalog/desktop/photo-desktop_1_2x.jpg 2x" media="(min-width:1199px)">
+                  <source srcset="img/catalog/tablet/photo-tablet_1.jpg 1x, img/catalog/tablet/photo-tablet_1_2x.jpg 2x" media="(min-width:767px)">
+                  <img src="img/catalog/mobile/photo-mobile_1.jpg" alt="photo1" class="item-catalog__image"
+                  srcset="img/catalog/mobile/photo-mobile_1_2x.jpg 2x">
                 </picture>
-
                 <div class="item-catalog__text">
-                  <h5 class="item-catalog__title sub-title">неродные просторы</h5>
+                  <h3 class="item-catalog__title sub-title">неродные просторы</h3>
                   <p class="item-catalog__sub-title">
                     Автор фото: Борис
                   </p>
@@ -76,62 +77,71 @@
               </li>
               <li class="catalog__item item-catalog">
                 <picture>
-                  <source srcset="img/catalog/desktop/photo-desktop_2.jpg" media="(min-width:1199px)">
-                  <source srcset="img/catalog/tablet/photo-tablet_2.jpg" media="(min-width:767px)">
-                  <img src="img/catalog/mobile/photo-mobile_2.jpg" alt="местная растительность"
-                    class="item-catalog__image">
+                  <source srcset="img/catalog/desktop/photo-desktop_2.jpg 1x, img/catalog/desktop/photo-desktop_2_2x.jpg 2x"
+                    media="(min-width:1199px)">
+                  <source srcset="img/catalog/tablet/photo-tablet_2.jpg 1x, img/catalog/tablet/photo-tablet_2_2x.jpg 2x"
+                    media="(min-width:767px)">
+                  <img src="img/catalog/mobile/photo-mobile_2.jpg" alt="photo1" class="item-catalog__image"
+                    srcset="img/catalog/mobile/photo-mobile_2_2x.jpg 2x">
                 </picture>
                 <div class="item-catalog__text">
-                <h5 class="item-catalog__title sub-title">местная растительность</h5>
-                <p class="item-catalog__sub-title">
-                  Автор фото: Сергей
-                </p>
-                <span class="item-catalog__stats">
-                  143
-                </span>
+                  <h3 class="item-catalog__title sub-title">местная растительность</h3>
+                  <p class="item-catalog__sub-title">
+                    Автор фото: Сергей
+                  </p>
+                  <span class="item-catalog__stats">
+                    143
+                  </span>
                 </div>
               </li>
               <li class="catalog__item item-catalog">
                 <picture>
-                  <source srcset="img/catalog/desktop/photo-desktop_3.jpg" media="(min-width:1199px)">
-                  <source srcset="img/catalog/tablet/photo-tablet_3.jpg" media="(min-width:767px)">
-                  <img src="img/catalog/mobile/photo-mobile_3.jpg" alt="дорога  на север" class="item-catalog__image">
+                  <source srcset="img/catalog/desktop/photo-desktop_3.jpg 1x, img/catalog/desktop/photo-desktop_3_2x.jpg 2x"
+                    media="(min-width:1199px)">
+                  <source srcset="img/catalog/tablet/photo-tablet_3.jpg 1x, img/catalog/tablet/photo-tablet_3_2x.jpg 2x"
+                    media="(min-width:767px)">
+                  <img src="img/catalog/mobile/photo-mobile_3.jpg" alt="photo1" class="item-catalog__image"
+                    srcset="img/catalog/mobile/photo-mobile_3_2x.jpg 2x">
                 </picture>
                 <div class="item-catalog__text">
-                <h5 class="item-catalog__title sub-title">дорога на север</h5>
-                <p class="item-catalog__sub-title">
-                  Автор фото: Петр
-                </p>
-                <span class="item-catalog__stats">
-                  96
-                </span>
+                  <h3 class="item-catalog__title sub-title">дорога на север</h3>
+                  <p class="item-catalog__sub-title">
+                    Автор фото: Петр
+                  </p>
+                  <span class="item-catalog__stats">
+                    96
+                  </span>
                 </div>
               </li>
               <li class="catalog__item item-catalog">
                 <picture>
-                  <source srcset="img/catalog/desktop/photo-desktop_4.jpg" media="(min-width:1199px)">
-                  <source srcset="img/catalog/tablet/photo-tablet_4.jpg" media="(min-width:767px)">
-                  <img src="img/catalog/mobile/photo-mobile_4.jpg" alt="мост дъявола" class="item-catalog__image">
+                  <source srcset="img/catalog/desktop/photo-desktop_4.jpg 1x, img/catalog/desktop/photo-desktop_4_2x.jpg 2x"
+                    media="(min-width:1199px)">
+                  <source srcset="img/catalog/tablet/photo-tablet_4.jpg 1x, img/catalog/tablet/photo-tablet_4_2x.jpg 2x"
+                    media="(min-width:767px)">
+                  <img src="img/catalog/mobile/photo-mobile_4.jpg" alt="photo1" class="item-catalog__image"
+                    srcset="img/catalog/mobile/photo-mobile_4_2x.jpg 2x">
                 </picture>
                 <div class="item-catalog__text">
-                <h5 class="item-catalog__title sub-title">мост дъявола</h5>
-                <p class="item-catalog__sub-title">
-                  Автор фото: Антон
-                </p>
-                <span class="item-catalog__stats">
-                  254
-                </span>
+                  <h3 class="item-catalog__title sub-title">мост дъявола</h3>
+                  <p class="item-catalog__sub-title">
+                    Автор фото: Антон
+                  </p>
+                  <span class="item-catalog__stats">
+                    254
+                  </span>
                 </div>
               </li>
             </ul>
             <div class="promo">
-              <h3 class="promo__title title">
+              <h2 class="promo__title title">
                 Все еще сомневаетесь?
-              </h3>
+              </h2>
               <p class="promo__sub-title sub-title">смотрите видеопрезентацию и скорее за билетами, пока они не
                 подорожали в очередной раз!</p>
-              <iframe class="promo__video" width="100%"  height="auto" src="https://www.youtube.com/embed/oo1WouI38rQ" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              <iframe class="promo__video" width="100%" height="auto" src="https://www.youtube.com/embed/oo1WouI38rQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -139,11 +149,11 @@
       </main>
       <footer class="footer footer--catalog">
         <div class="footer__container">
-          <h3 class="footer__title title">#visitsedona</h3>
+          <h2 class="footer__title title">#visitsedona</h2>
           <div class="footer__socials social">
-            <a href="#" class="social__link wk-link"></a>
-            <a href="#" class="social__link telegram-link"></a>
-            <a href="#" class="social__link youtube-link"></a>
+            <a href="#" class="social__link wk-icon"></a>
+            <a href="#" class="social__link telegram-icon"></a>
+            <a href="#" class="social__link youtube-icon"></a>
           </div>
           <div class="footer__copyright copyright">
             <p class="copyright__text">разработано</p>

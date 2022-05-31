@@ -8,7 +8,10 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body>
@@ -58,7 +61,16 @@
               <p class="item-advantage__number">— №1 —</p>
               <p class="item-advantage__sub-title sub-title">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img src="img/advantages/advantages-image_1.jpg" alt="sedona city foto" class="advantages__preview-image">
+            <div class="advantages__image-wrapper">
+              <picture>
+                <source media="(min-width:1199px)"
+                  srcset="img/advantages/advantages-image_1_desktop.jpg 1x, img/advantages/advantages-image_1_desktop2x.jpg 2x">
+                <source media="(min-width:767px)"
+                  srcset="img/advantages/advantages-image_1_tablet.jpg 1x, img/advantages/advantages-image_1_tablet2x.jpg 2x">
+                <img src="img/advantages/advantages-image_1_mobile.jpg" class="advantages__preview-image"
+                  srcset="img/advantages/advantages-image_1_mobile2x.jpg 2x" alt="sedona city foto">
+              </picture>
+            </div>
           </article>
           <ul class="advantages__top-list">
             <li class="advantages__features features-advantage">
@@ -93,7 +105,16 @@
               <p class="item-advantage__number">— №2 —</p>
               <p class="item-advantage__sub-title sub-title">да, по нему можно пройти! если вы осмелитесь, конечно</p>
             </div>
-            <img src="img/advantages/advantages-image_2.jpg" alt="devil bridge foto" class="advantages__preview-image">
+            <div class="advantages__image-wrapper">
+              <picture>
+                <source media="(min-width:1199px)"
+                  srcset="img/advantages/advantages-image_2_desktop.jpg 1x, img/advantages/advantages-image_2_desktop2x.jpg 2x">
+                <source media="(min-width:767px)"
+                  srcset="img/advantages/advantages-image_2_tablet.jpg 1x, img/advantages/advantages-image_2_tablet2x.jpg 2x">
+                <img src="img/advantages/advantages-image_2_mobile.jpg" class="advantages__preview-image"
+                  srcset="img/advantages/advantages-image_2_mobile2x.jpg 2x" alt="sedona city foto">
+              </picture>
+            </div>
           </article>
           <ul class="advantages__bottom-list">
             <li class="advantages__item item-advantage item-advantage--bottom">
@@ -130,9 +151,9 @@
         <div class="footer__container">
           <h3 class="footer__title">#visitsedona</h3>
           <div class="footer__socials social">
-            <a href="#" class="social__link wk-link"></a>
-            <a href="#" class="social__link telegram-link"></a>
-            <a href="#" class="social__link youtube-link"></a>
+            <a href="#" class="social__link wk-icon"></a>
+            <a href="#" class="social__link telegram-icon"></a>
+            <a href="#" class="social__link youtube-icon"></a>
           </div>
           <div class="footer__copyright copyright">
             <p class="copyright__text">разработано</p>

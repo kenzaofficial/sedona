@@ -1,23 +1,27 @@
 .impression {
   position: relative;
   padding: 25px 0 25px;
+
   &::before {
     position: absolute;
     content: "";
     width: 150%;
     height: 1px;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     top: 0;
     left: -10%;
+
     @media (min-width: 767px) {
       width: 0;
     }
   }
+
   @media (min-width: 767px) {
     padding-top: 65px;
     margin: 0 auto;
     width: 100%;
   }
+
   @media (min-width: 1199px) {
     padding: 70px 0 55px;
   }
@@ -28,13 +32,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 18px;
+
   @media (min-width: 767px) {
     flex-direction: row;
     padding: 0 36px;
     width: 100%;
     column-gap: 50px;
-    border-top: 1px solid #DBDBDB;
+    border-top: 1px solid #dbdbdb;
   }
+
   @media (min-width: 1199px) {
     justify-content: center;
     column-gap: 65px;
@@ -43,16 +49,15 @@
 
 .impression__title {
   margin-bottom: 18px;
+
   @media (min-width: 767px) {
     padding: 0 60px;
     margin-bottom: 27px;
   }
+
   @media (min-width: 1199px) {
     margin-bottom: 45px;
   }
-}
-
-.impression__item {
 }
 
 .impression__label {
@@ -61,30 +66,33 @@
   font-weight: 700;
   line-height: 26px;
   cursor: pointer;
+
   &::before {
     content: "";
     display: inline-block;
     width: 46px;
     height: 46px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 15px;
-    transition: .5s;
-    
+    transition: 0.5s;
   }
+
   &:hover::before {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
+
   &:active::before,
-  &:active::after{
+  &:active::after {
     opacity: 0.3;
   }
 }
+
 .impression__label::after {
   position: absolute;
   content: "";
-  background-color: #333;
+  background-color: #333333;
   width: 16px;
   height: 16px;
   top: 60%;

@@ -1,8 +1,10 @@
 .wrapper__container {
   max-width: 1280px;
   padding: 0;
+
   @media (min-width: 1199px) {
     padding: 0 40px;
+    background-color: #E7E5E5;
   }
 }
 
@@ -12,6 +14,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
   @media (min-width: 767px) {
     font-size: 21px;
   }

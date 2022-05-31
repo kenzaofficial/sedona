@@ -7,16 +7,19 @@
   line-height: 1.33;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-   background-color: #81b3d2;
-  transition: .3s;
+  color: #ffffff;
+  background-color: #81b3d2;
+  transition: 0.3s;
+
   &:hover {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
+
   &:active {
-    color: rgba($color: #fff, $alpha: 0.3);
-    background-color: #5496BD;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #5496bd;
   }
+
   @media (min-width: 767px) {
     max-width: 458px;
     width: 100%;
