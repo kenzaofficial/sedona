@@ -84,26 +84,34 @@
   background: #81b3d2 url("../../img/footer/youtube.svg") center no-repeat;
 }
 
+
 .copyright {
   display: flex;
   align-items: center;
+  gap: 10px;
+  transition: .3s;
 
   &:hover {
     color: #81b3d2;
     cursor: pointer;
+    transform: scale(1.2);
 
-    .copyright__logo path {
+    .copyright__logo {
       fill: #81b3d2;
     }
   }
 
+
   &:active {
     color: #b3b3b3;
 
-    .copyright__logo path {
-      fill: #b3b3b3;
-    }
   }
+}
+
+.copyright__logo {
+  transition: .3s;
+  fill: #000000;
+
 }
 
 .copyright__text {

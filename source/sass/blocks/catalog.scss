@@ -141,7 +141,11 @@
 
   &::before {
     content: url("../../img/catalog/like-icon.svg");
-    margin-right: 10px;
+
+    @media (min-width: 1199px) {
+      content: url("../../img/catalog/like-icon_desktop.svg");
+
+    }
 
     @media (min-width: 767px) {
       position: absolute;
